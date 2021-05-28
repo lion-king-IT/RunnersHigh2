@@ -1,0 +1,8 @@
+include ':data:repository'
+include ':data:db'
+include ':data:api'
+include ':data:entity'
+include ':ui:viewmodel'
+include ':ui:view'
+include ':app',":ui",":data"
+rootProject.name = "RunnersHigh2"

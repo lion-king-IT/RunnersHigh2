@@ -1,0 +1,14 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+}
+
+dependencies {
+
+    implementation project(":data:db")
+    implementation project(":data:entity")
+    implementation project(":data:api")
+}
