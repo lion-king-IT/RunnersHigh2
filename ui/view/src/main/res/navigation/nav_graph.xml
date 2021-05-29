@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profileSettingFragment">
+
+    <fragment
+        android:id="@+id/runFragment"
+        android:name="com.reo.running.ui.view.run.RunFragment"
+        android:label="Fragment1.0">
+        <action
+            android:id="@+id/action_runFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.reo.running.ui.view.run.GraphGragment"
+        android:label="Fragment2.0"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.reo.running.ui.view.run.ProfileFragment"
+        android:label="Fragment3.0">
+        <action
+            android:id="@+id/action_profileFragment_to_profileSettingFragment"
+            app:destination="@id/profileSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSettingFragment"
+        android:name="com.reo.running.ui.view.run.ProfileSettingFragment"
+        android:label="ProfileSettingFragment" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.reo.running.ui.view.run.ResultFragment"
+        android:label="ResultFragment" />
 
 </navigation>
