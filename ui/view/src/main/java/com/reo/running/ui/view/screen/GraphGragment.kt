@@ -1,4 +1,4 @@
-package com.reo.running.ui.view.run
+package com.reo.running.ui.view.screen
 
 import android.os.Bundle
 import android.view.LayoutInflater

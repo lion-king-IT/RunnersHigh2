@@ -2,35 +2,35 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/profileSettingFragment">
+    app:startDestination="@id/profileSettingFragment2">
 
     <fragment
         android:id="@+id/runFragment"
-        android:name="com.reo.running.ui.view.run.RunFragment"
+        android:name="com.reo.running.ui.view.screen.RunFragment"
         android:label="Fragment1.0">
         <action
-            android:id="@+id/action_runFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            android:id="@+id/action_runFragment_to_resultFragment2"
+            app:destination="@id/resultFragment2" />
     </fragment>
     <fragment
         android:id="@+id/graphFragment"
-        android:name="com.reo.running.ui.view.run.GraphGragment"
+        android:name="com.reo.running.ui.view.screen.GraphGragment"
         android:label="Fragment2.0"/>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.reo.running.ui.view.run.ProfileFragment"
+        android:name="com.reo.running.ui.view.screen.ProfileFragment"
         android:label="Fragment3.0">
         <action
-            android:id="@+id/action_profileFragment_to_profileSettingFragment"
-            app:destination="@id/profileSettingFragment" />
+            android:id="@+id/action_profileFragment_to_profileSettingFragment2"
+            app:destination="@id/profileSettingFragment2" />
     </fragment>
     <fragment
-        android:id="@+id/profileSettingFragment"
-        android:name="com.reo.running.ui.view.run.ProfileSettingFragment"
+        android:id="@+id/profileSettingFragment2"
+        android:name="com.reo.running.ui.view.screen.ProfileSettingFragment"
         android:label="ProfileSettingFragment" />
     <fragment
-        android:id="@+id/resultFragment"
-        android:name="com.reo.running.ui.view.run.ResultFragment"
+        android:id="@+id/resultFragment2"
+        android:name="com.reo.running.ui.view.screen.ResultFragment"
         android:label="ResultFragment" />
 
 </navigation>
