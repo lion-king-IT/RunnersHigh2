@@ -15,7 +15,8 @@ class RunFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentRunBinding.inflate(layoutInflater, container, false)
+        super.onCreateView(inflater, container, savedInstanceState)
+        binding = FragmentRunBinding.inflate(inflater, container, false)
         return binding.root
     }
 }
