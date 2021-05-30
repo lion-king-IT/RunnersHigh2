@@ -5,9 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.reo.running.ui.view.databinding.FragmentProfileSettingBinding
 
-class ProfileSettingFragment: Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+class ProfileSettingFragment : Fragment() {
+    private lateinit var binding: FragmentProfileSettingBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentProfileSettingBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 }

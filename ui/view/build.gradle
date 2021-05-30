@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id 'com.google.secrets_gradle_plugin' version '0.5'
 }
 
@@ -21,13 +22,13 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.1'
 
-    implementation "com.google.android.material:material:1.4.0-beta01"
-
-    def nav_version = "2.3.5"
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-
     implementation project(":ui:viewmodel")
     implementation project(":data:entity")
+
+    implementation "com.google.android.material:material:1.4.0-beta01"
+
+    def nav_version = '2.3.5'
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 
 }
