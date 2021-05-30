@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.reo.running.ui.view.databinding.FragmentGraphBinding
 
-class GraphGragment : Fragment() {
+class GraphFragment : Fragment() {
     private lateinit var binding: FragmentGraphBinding
 
     override fun onCreateView(

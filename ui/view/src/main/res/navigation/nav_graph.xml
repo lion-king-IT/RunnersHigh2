@@ -12,25 +12,30 @@
             android:id="@+id/action_runFragment_to_resultFragment2"
             app:destination="@id/resultFragment2" />
     </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment2"
+        android:name="com.reo.running.ui.view.screen.ResultFragment"
+        android:label="ResultFragment" />
+
     <fragment
         android:id="@+id/graphFragment"
-        android:name="com.reo.running.ui.view.screen.GraphGragment"
-        android:label="Fragment2.0"/>
+        android:name="com.reo.running.ui.view.screen.GraphFragment"
+        android:label="Fragment2.0" />
+
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.reo.running.ui.view.screen.ProfileFragment"
         android:label="Fragment3.0">
         <action
             android:id="@+id/action_profileFragment_to_profileSettingFragment2"
-            app:destination="@id/profileSettingFragment2" />
+            app:destination="@id/profileSettingFragment" />
     </fragment>
+
     <fragment
-        android:id="@+id/profileSettingFragment2"
+        android:id="@+id/profileSettingFragment"
         android:name="com.reo.running.ui.view.screen.ProfileSettingFragment"
         android:label="ProfileSettingFragment" />
-    <fragment
-        android:id="@+id/resultFragment2"
-        android:name="com.reo.running.ui.view.screen.ResultFragment"
-        android:label="ResultFragment" />
+
 
 </navigation>
