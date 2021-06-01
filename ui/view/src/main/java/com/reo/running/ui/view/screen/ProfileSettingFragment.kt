@@ -16,7 +16,7 @@ class ProfileSettingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        binding = FragmentProfileSettingBinding.inflate(inflater, container, false)
+        binding = FragmentProfileSettingBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 }

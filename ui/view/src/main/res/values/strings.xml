@@ -3,4 +3,5 @@
     <string name="run_item_title">Run</string>
     <string name="graph_item_title">Graph</string>
     <string name="profile_item_title">Profile</string>
+    <string name="map_api_key">AIzaSyCLjc5jJrh5iKtSSuonLOhNDsTENp3rwMs</string>
 </resources>

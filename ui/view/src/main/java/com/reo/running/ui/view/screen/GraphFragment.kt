@@ -16,7 +16,7 @@ class GraphFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        binding = FragmentGraphBinding.inflate(inflater, container, false)
+        binding = FragmentGraphBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 }

@@ -16,7 +16,7 @@ class ResultFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        binding = FragmentResultBinding.inflate(inflater, container, false)
+        binding = FragmentResultBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 }
