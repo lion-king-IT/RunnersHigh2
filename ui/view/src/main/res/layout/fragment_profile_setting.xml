@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#aa00ff">
+        android:background="@color/white">
 
         <TextView
             android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="ProfileSettingFragment"
             android:textSize="32sp"
-            android:textColor="#fafafa" />
+            android:textColor="@color/black" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
