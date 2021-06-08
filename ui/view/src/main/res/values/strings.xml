@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="run_item_title">Run</string>
+    <string name="graph_item_title">Graph</string>
+    <string name="profile_item_title">Profile</string>
+</resources>

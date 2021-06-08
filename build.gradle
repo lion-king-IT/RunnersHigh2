@@ -4,7 +4,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven{
+        maven {
             url = "https://jitpack.io"
         }
     }
@@ -21,7 +21,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven{
+        maven {
             url = "https://jitpack.io"
         }
     }
@@ -42,6 +42,13 @@ subprojects {
 
                     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
                     consumerProguardFiles "consumer-rules.pro"
+
+                    def properties = new Properties()
+                    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+                    // local.propertiesのapi_keyに定義されている値を読み込む
+                    def API_KEY = properties.getProperty("MAPS_API_KEY")
+                    // ついでにbuildConfigFieldに定義
+                    resValue("string", "API_KEY", "\"${API_KEY}\"")
                 }
 
                 buildTypes {
