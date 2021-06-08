@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import com.reo.running.ui.view.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
-    private lateinit var binding: FragmentProfileBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -16,7 +15,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        binding = FragmentProfileBinding.inflate(layoutInflater, container, false)
+        val binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

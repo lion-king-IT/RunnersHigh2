@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import com.reo.running.ui.view.databinding.FragmentResultBinding
 
 class ResultFragment : Fragment() {
-    lateinit var binding: FragmentResultBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -16,7 +15,7 @@ class ResultFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        binding = FragmentResultBinding.inflate(layoutInflater, container, false)
+        val binding = FragmentResultBinding.inflate(inflater, container, false)
         return binding.root
     }
 }
