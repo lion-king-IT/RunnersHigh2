@@ -25,7 +25,7 @@ dependencies {
     implementation project(":ui:viewmodel")
     implementation project(":data:entity")
 
-    implementation "com.google.android.material:material:1.4.0-beta01"
+    implementation "com.google.android.material:material:1.4.0-rc01"
 
     def nav_version = '2.3.5'
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"

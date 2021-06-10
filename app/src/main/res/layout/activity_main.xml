@@ -5,6 +5,9 @@
 
     <data>
 
+        <variable
+            name="viewModel"
+            type="com.reo.running.runnershigh2.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
