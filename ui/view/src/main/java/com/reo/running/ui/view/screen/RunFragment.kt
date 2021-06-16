@@ -9,10 +9,13 @@ import android.view.ViewGroup
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.reo.running.ui.view.databinding.FragmentRunBinding
+import com.reo.running.ui.viewmodel.MainViewModel
 
 class RunFragment : Fragment() {
 
+    private val parentViewModel: MainViewModel by activityViewModels()
     private lateinit var binding: FragmentRunBinding
 
     companion object {
@@ -52,7 +55,7 @@ class RunFragment : Fragment() {
     }
 
     private fun deleteToolbar() {
-        
+
     }
 
 
