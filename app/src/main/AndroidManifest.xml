@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RunnersHigh2">
 
+        <service
+            android:name="MyLocation"
+            android:foregroundServiceType="location" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/API_KEY" />

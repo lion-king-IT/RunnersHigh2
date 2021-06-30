@@ -10,16 +10,18 @@ import com.reo.running.ui.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
     private val mainViewModel: MainViewModel by viewModels()
-
     lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.viewModel = mainViewModel
-        binding.lifecycleOwner = this
-        setContentView(binding.root)
+        binding.run {
+            viewModel = mainViewModel
+            lifecycleOwner = this@MainActivity
+            setContentView(root)
+            val navController = findNavController(R.id.nav_host_fragment_container)
+            setupWithNavController(bottomNavigation, navController)
 
-        val navController = findNavController(R.id.nav_host_fragment_container)
-        setupWithNavController(binding.bottomNavigation, navController)
+        }
     }
 }

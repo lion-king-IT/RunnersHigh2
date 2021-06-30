@@ -3,7 +3,6 @@ package com.reo.running.ui.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.android.gms.location.LocationServices
 
 class MainViewModel : ViewModel() {
 
@@ -11,11 +10,8 @@ class MainViewModel : ViewModel() {
     val isVisibleToolbar: LiveData<Boolean>
         get() = _isVisibleToolbar
 
-    private val _isVisibleBottomNavigation = MutableLiveData<Boolean>(false)
+    private val _isVisibleBottomNavigation = MutableLiveData<Boolean>(true)
     val isVisibleBottomNavigation: LiveData<Boolean>
         get() = _isVisibleBottomNavigation
-
-    private val fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-
 
 }

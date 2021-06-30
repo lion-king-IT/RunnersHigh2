@@ -3,6 +3,9 @@
 
     <data>
 
+        <variable
+            name="viewModel"
+            type="com.reo.running.ui.viewmodel.RunViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
